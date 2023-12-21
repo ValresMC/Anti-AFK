@@ -1,0 +1,5 @@
+name: vAntiAFK
+author: ValresMC
+version: 1.0.0
+api: [5.0.0]
+main: Valres\AntiAFK\Main
