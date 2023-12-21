@@ -27,8 +27,10 @@ class Main extends PluginBase implements Listener
             foreach(self::$cooldown as $player => $time) {
                 if(!isset(self::$cooldown[$player]) || self::$cooldown[$player] - time() <= 0){
                     $p = Server::getInstance()->getPlayerExact($player);
-                    $p->kick($this->message);
-                    unset(self::$cooldown[$player]);
+                    if(!$p->hasPermission("antiafk.bypass")){
+                        $p->kick($this->message);
+                        unset(self::$cooldown[$player]);
+                    }
                 }
             }
         }), 20);
