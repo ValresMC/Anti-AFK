@@ -15,6 +15,13 @@
 
 (FRA) : `antiafk.bypass`, permet de passer au dessus des restrictions.
 
+## TODO :
+
+| ToDo | ❔ |
+| :----: | :----: |
+| bypass permission | ✔ |
+| allowed world | ❌ |
+
 ## My discord :
 
 You can join <a href="https://discord.gg/NkZu7DNKEn">here</a> !
