@@ -49,7 +49,7 @@ class Main extends PluginBase implements Listener
     {
         $player = $event->getPlayer();
 
-        if(!isset(self::$cooldown[$player->getName()])){
+        if(isset(self::$cooldown[$player->getName()])){
             unset(self::$cooldown[$player->getName()]);
         }
     }
